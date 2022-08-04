@@ -1,0 +1,128 @@
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #fff1e5;
+  text-align: center;
+}
+
+/*Titulo*/
+h1 {
+  color: #3e2b96;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.titulo {
+  position: relative;
+  margin: 150px auto 10px;
+  width: 50%;
+}
+
+/*Botones Inicio*/
+.css-button-sliding-to-left--blue {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #3e2b96;
+  color: #3e2b96;
+}
+.css-button-sliding-to-left--blue:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--blue:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--blue:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #3e2b96;
+}
+
+.botonesPantallaInicio {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  place-items: center;
+}
+
+.buttons-container {
+  padding: 30px;
+  display: inline-block;
+}
+
+/*Puntuación*/
+p {
+  font-family: "Preahvihear", sans-serif;
+  padding: 15px;
+  font-size: 20px;
+  color: #6151a6;
+}
+
+/*Imagenes pantalla de inicio*/
+/*Huellas*/
+.huellas {
+  width: 12rem;
+  position: absolute;
+}
+
+.huellas-top {
+  left: 0px;
+  top: 0px;
+}
+
+.huellas-abajo {
+  right: 0px;
+  bottom: 10px;
+}
+
+/*FlashCards*/
+
+.flash-Cards {
+  width: clamp(225px, 50%, 600px);
+}
+
+.container {
+  width: 75%;
+}
+
+@media (max-width: 989px) {
+  /*Título*/
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .titulo {
+    margin: 200px auto 0;
+    width: 100%;
+  }
+
+  /*Huellas */
+  .huellas {
+    position: absolute;
+    width: 8rem;
+  }
+
+  .huellas-top {
+    transform: rotate(15deg);
+    left: 0;
+  }
+}
